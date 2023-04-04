@@ -8,6 +8,7 @@
 }
 
 .container {
+
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -138,14 +139,14 @@
   
 }
 
-#fade, #modal{
+.fade, .modal{
   transition: .5s;
   opacity: 1;
   pointer-events: all;
 }
 
 
-#fade{
+.fade{
   position: fixed;
   top: 0;
   left: 0;
@@ -155,7 +156,7 @@
   z-index: 5;
 }
 
-#modal{
+.modal{
   position: fixed;
   background-color:white;
   left: 50%;
@@ -182,7 +183,7 @@
   margin-bottom: 1rem;
 }
 
-#modal.hide,
+.modal.hide,
 #fade.hide{
   opacity: 0;
   pointer-events: none;
